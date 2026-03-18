@@ -1,3 +1,8 @@
+
+================================================================
+        PALINDROME NUMBER — COMPLETE EXPLANATION (JS + C)
+        LeetCode #9
+================================================================
 Q9. NUMBER PALINDROME
 
 Given an integer x, return true if x is a palindrome, and false otherwise.
@@ -26,3 +31,147 @@ Constraints:
  
 
 Follow up: Could you solve it without converting the integer to a string?
+
+PROBLEM:
+--------
+Given an integer x, return true if x is a palindrome,
+false otherwise.
+
+Example:
+  121   → true  (reads same forwards and backwards)
+  -121  → false (negative numbers are never palindromes)
+  10    → false (reads as 01 backwards, not same)
+
+----------------------------------------------------------------
+APPROACH 1 — TWO POINTER (String conversion):
+----------------------------------------------
+Convert number to string.
+Use two pointers p (start) and q (end).
+Compare characters moving inward.
+If any mismatch → not palindrome.
+
+Time:  O(n) — n is number of digits
+Space: O(n) — storing string
+
+----------------------------------------------------------------
+JAVASCRIPT SOLUTION (Two Pointer):
+------------------------------------
+
+var isPalindrome = function(x) {
+    if (x < 0) return false;
+    let str = x.toString();
+    return str === str.split('').reverse().join('');
+};
+
+----------------------------------------------------------------
+C SOLUTION (Two Pointer):
+--------------------------
+
+bool isPalindrome(int x) {
+    if (x < 0) return false;
+
+    char* arr = (char*) malloc(sizeof(char) * 22);
+    sprintf(arr, "%d", x);   // convert int to string
+
+    char* p = arr;            // pointer at start
+    char* q = arr;            // pointer at end
+
+    // move q to last character
+    while (*q != '\0') {
+        q++;
+    }
+    q--;
+
+    // compare from both ends moving inward
+    while (p < q) {
+        if (*p == *q) {
+            p++;
+            q--;
+        } else {
+            free(arr);
+            return false;
+        }
+    }
+
+    free(arr);
+    return true;
+}
+
+----------------------------------------------------------------
+APPROACH 2 — OPTIMISED (Reverse the number):
+---------------------------------------------
+No strings, no pointers. Pure math.
+Reverse the integer itself and compare with original.
+If same → palindrome.
+
+Time:  O(n) — n is number of digits
+Space: O(1) — no extra memory
+
+HOW TO REVERSE A NUMBER:
+  x = 121
+  step 1: digit = 121 % 10 = 1, reversed = 0*10 + 1 = 1,   x = 12
+  step 2: digit = 12  % 10 = 2, reversed = 1*10 + 2 = 12,  x = 1
+  step 3: digit = 1   % 10 = 1, reversed = 12*10 + 1 = 121, x = 0
+  reversed = 121 == original 121 → true ✅
+
+----------------------------------------------------------------
+JAVASCRIPT SOLUTION (Reverse Number):
+---------------------------------------
+
+var isPalindrome = function(x) {
+    if (x < 0) return false;
+
+    let original = x;
+    let reversed = 0;
+
+    while (x > 0) {
+        let digit = x % 10;
+        reversed = (reversed * 10) + digit;
+        x = Math.floor(x / 10);
+    }
+
+    return original === reversed;
+};
+
+----------------------------------------------------------------
+C SOLUTION (Reverse Number):
+------------------------------
+
+bool isPalindrome(int x) {
+    if (x < 0) return false;
+
+    int original = x;
+    int reversed = 0;
+
+    while (x > 0) {
+        int digit = x % 10;
+        reversed = (reversed * 10) + digit;
+        x = x / 10;
+    }
+
+    return original == reversed;
+}
+
+----------------------------------------------------------------
+KEY DIFFERENCES: JS vs C
+-------------------------
+
+| Topic           | JavaScript           | C                        |
+|-----------------|----------------------|--------------------------|
+| Int division    | Math.floor(x / 10)   | x / 10 (auto floor)      |
+| String convert  | x.toString()         | sprintf(arr, "%d", x)    |
+| Bool return     | true/false           | true/false (stdbool.h)   |
+| Memory          | Auto managed         | malloc + free manually   |
+
+----------------------------------------------------------------
+COMMON BUGS TO AVOID:
+----------------------
+1. Forgetting negative number check (x < 0 → false)
+2. Moving wrong pointer in first while loop (C two pointer)
+3. Using reversed + digit instead of (reversed * 10) + digit
+4. Forgetting to assign x = x / 10 (infinite loop!)
+5. p > q instead of p < q in while loop condition
+
+================================================================
+                        END OF FILE
+================================================================
