@@ -21,5 +21,3 @@ var plusOne = function (digits) {
     return digits;
 
 };
-//this soltion also has same time complexity O( m + n ).
-//cuz unshift adds 1 element in the starting .. which uses loop in backend yeah so !

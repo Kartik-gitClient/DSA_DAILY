@@ -1,10 +1,13 @@
+
+ ================================================================
+        PLUS ONE — COMPLETE EXPLANATION (JS + C)
+        LeetCode #66
+================================================================
 Q66.
 
 You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
 
 Increment the large integer by one and return the resulting array of digits.
-
-
 
 Example 1:
 
@@ -28,3 +31,106 @@ Explanation: The array represents the integer 9.
 Incrementing by one gives 9 + 1 = 10.
 Thus, the result should be [1,0].
  
+PROBLEM:
+--------
+Given an array of digits representing a large integer,
+add 1 to it and return the resulting array.
+
+Example:
+  [1,2,3] → [1,2,4]
+  [1,9,9] → [2,0,0]
+  [9,9,9] → [1,0,0,0]
+  [9]     → [1,0]
+
+----------------------------------------------------------------
+APPROACH:
+---------
+Loop from RIGHT TO LEFT (last digit to first digit).
+
+Case 1: digits[i] + 1 < 10
+  → Just add 1 and return immediately. No carry needed.
+
+Case 2: digits[i] == 9
+  → Set digit to 0 and continue loop (carry to next digit).
+
+Case 3: All digits were 9 (loop finishes without returning)
+  → All digits are now 0.
+  → Create new array of size+1, set first element to 1, rest 0.
+  → Example: [9,9,9] → [1,0,0,0]
+
+----------------------------------------------------------------
+JAVASCRIPT SOLUTION:
+--------------------
+
+var plusOne = function(digits) {
+    let lastIndex = digits.length - 1;
+
+    for (let i = lastIndex; i >= 0; i--) {
+        if (digits[i] + 1 < 10) {
+            // No carry needed, just add 1 and return
+            digits[i] = digits[i] + 1;
+            return digits;
+        } else {
+            // Carry! Set current digit to 0
+            digits[i] = 0;
+        }
+    }
+
+    // Reaching here means all digits were 9
+    // e.g. [9,9,9] is now [0,0,0], need [1,0,0,0]
+    digits.unshift(1);
+    return digits;
+};
+
+----------------------------------------------------------------
+C SOLUTION:
+-----------
+
+int* plusOne(int* digits, int digitsSize, int* returnSize) {
+    int lastIndex = digitsSize - 1;
+    int i, j;
+
+    for (i = lastIndex; i >= 0; i--) {
+        if (digits[i] + 1 < 10) {
+            // No carry needed, just add 1 and return
+            digits[i] = digits[i] + 1;
+            *returnSize = digitsSize;
+            return digits;
+        } else {
+            // Carry! Set current digit to 0
+            digits[i] = 0;
+        }
+    }
+
+    // Reaching here means all digits were 9
+    // e.g. [9,9,9] is now [0,0,0], need [1,0,0,0]
+    // Allocate new array of size digitsSize + 1
+    int *newArr = (int*) malloc(sizeof(int) * (digitsSize + 1));
+    newArr[0] = 1;
+    for (j = 1; j <= digitsSize; j++) {
+        newArr[j] = 0;
+    }
+    *returnSize = digitsSize + 1;
+    return newArr;
+}
+
+----------------------------------------------------------------
+KEY DIFFERENCES: JS vs C
+-------------------------
+
+| Topic            | JavaScript         | C                        |
+|------------------|--------------------|--------------------------|
+| Add to front     | digits.unshift(1)  | malloc new array manually|
+| Return size      | Not needed         | *returnSize must be set  |
+| Memory           | Auto managed       | malloc + free manually   |
+| Array size       | Dynamic            | Fixed, must malloc       |
+
+----------------------------------------------------------------
+COMPLEXITY:
+-----------
+Time:  O(n) — single loop through digits
+Space: O(1) — in most cases (except all 9s where O(n))
+
+================================================================
+                        END OF FILE
+================================================================

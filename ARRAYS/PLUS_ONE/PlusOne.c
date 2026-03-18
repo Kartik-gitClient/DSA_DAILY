@@ -26,4 +26,3 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
 
 }
 //HERE DYNAMIC MEMORY ALLOCATION IS USED AS THE QUESTION REUIRED IT NIGGESHH
-//THIS APPROACH IS GOOD .. BUT YEAH IT HAS O( m + n ) TIME COMPLEXITY DUE TO 2 loops i guess
