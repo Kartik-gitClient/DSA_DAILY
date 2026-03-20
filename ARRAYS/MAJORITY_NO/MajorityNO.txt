@@ -1,0 +1,115 @@
+================================================================
+        MAJORITY ELEMENT — COMPLETE EXPLANATION (JS)
+        LeetCode #169
+================================================================
+
+PROBLEM:
+--------
+Given an array of integers, return the majority element.
+The majority element is the element that appears more than
+n/2 times. You may assume the majority element always exists.
+
+Example:
+  [3,2,3]         → 3
+  [2,2,1,1,1]     → 1
+  [3,3,3,2,1]     → 3
+
+----------------------------------------------------------------
+APPROACH — HASHMAP (Object as frequency counter):
+--------------------------------------------------
+1. Loop through array and count occurrences of each element
+   using a JS object (key = element, value = count)
+
+2. Loop through the object and find the key with highest count
+
+3. Return that key (parsed as integer)
+
+Time:  O(n) — two separate single loops
+Space: O(n) — storing counts in object
+
+----------------------------------------------------------------
+EXAMPLE WALKTHROUGH:
+---------------------
+nums = [2, 2, 1, 1, 1]
+
+After first loop:
+  obj = { '2': 2, '1': 3 }
+
+After second loop:
+  key='2' → obj['2']=2 > Max=0 → Max=2, res='2'
+  key='1' → obj['1']=3 > Max=2 → Max=3, res='1'
+
+return parseInt('1') → 1 ✅
+
+----------------------------------------------------------------
+JAVASCRIPT SOLUTION:
+--------------------
+
+var majorityElement = function(nums) {
+    let obj = {};
+    let Max = 0;
+    let res = 0;
+
+    // Step 1: Count occurrences of each element
+    for (let i = 0; i < nums.length; i++) {
+        if (obj[nums[i]]) {
+            obj[nums[i]] = obj[nums[i]] + 1;  // increment count
+        } else {
+            obj[nums[i]] = 1;                  // first occurrence
+        }
+    }
+
+    // Step 2: Find element with highest count
+    for (let key in obj) {
+        if (obj[key] > Max) {
+            Max = obj[key];   // update max count
+            res = key;        // update result element
+        }
+    }
+
+    // Step 3: Return as integer (keys are strings in JS objects)
+    return parseInt(res);
+};
+
+----------------------------------------------------------------
+WHY parseInt()?
+---------------
+In JS, object keys are always STRINGS.
+So res = '1' (string) not 1 (number).
+parseInt() converts it back to number before returning.
+
+Without parseInt:
+  return '1'  ❌ wrong type
+
+With parseInt:
+  return 1    ✅ correct type
+
+----------------------------------------------------------------
+COMMON BUGS TO AVOID:
+----------------------
+1. Comparing obj[key] > obj[key+1] instead of obj[key] > Max
+2. Returning obj[Max] instead of key itself
+3. Forgetting parseInt() at the end
+4. Using counter variable unnecessarily — just increment by 1
+
+----------------------------------------------------------------
+BONUS — EVEN SHORTER VERSION:
+-------------------------------
+
+var majorityElement = function(nums) {
+    let obj = {};
+    for (let num of nums) {
+        obj[num] = (obj[num] || 0) + 1;
+    }
+    return parseInt(Object.keys(obj).find(key => obj[key] > nums.length / 2));
+};
+
+----------------------------------------------------------------
+COMPLEXITY:
+-----------
+Time:  O(n) — two single loops
+Space: O(n) — object storing counts
+
+================================================================
+                        END OF FILE
+================================================================
