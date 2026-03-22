@@ -1,0 +1,174 @@
+================================================================
+        BUBBLE SORT — STEP BY STEP VISUALIZATION
+        Array: [5, 1, 4, 2, 10, 1]
+================================================================
+
+HOW TO READ:
+------------
+^ = comparing these two elements
+* = swap happened
+- = no swap
+
+================================================================
+PASS 1: (Largest element 10 bubbles to the end)
+================================================================
+
+Start:  [5, 1, 4, 2, 10, 1]
+
+Step 1: Compare index 0 and 1
+        [5, 1, 4, 2, 10, 1]
+         ^  ^
+        5 > 1 → SWAP!
+        [1, 5, 4, 2, 10, 1]  *
+
+Step 2: Compare index 1 and 2
+        [1, 5, 4, 2, 10, 1]
+            ^  ^
+        5 > 4 → SWAP!
+        [1, 4, 5, 2, 10, 1]  *
+
+Step 3: Compare index 2 and 3
+        [1, 4, 5, 2, 10, 1]
+               ^  ^
+        5 > 2 → SWAP!
+        [1, 4, 2, 5, 10, 1]  *
+
+Step 4: Compare index 3 and 4
+        [1, 4, 2, 5, 10, 1]
+                  ^   ^
+        5 < 10 → NO SWAP
+        [1, 4, 2, 5, 10, 1]  -
+
+Step 5: Compare index 4 and 5
+        [1, 4, 2, 5, 10, 1]
+                      ^   ^
+        10 > 1 → SWAP!
+        [1, 4, 2, 5, 1, 10]  *
+
+After Pass 1: [1, 4, 2, 5, 1, 10]
+                                ^^ 10 is in correct place! ✅
+
+================================================================
+PASS 2: (Second largest 5 bubbles to second last)
+================================================================
+
+Start:  [1, 4, 2, 5, 1, 10]
+                         ^^ already sorted, ignored!
+
+Step 1: Compare index 0 and 1
+        [1, 4, 2, 5, 1, 10]
+         ^  ^
+        1 < 4 → NO SWAP
+        [1, 4, 2, 5, 1, 10]  -
+
+Step 2: Compare index 1 and 2
+        [1, 4, 2, 5, 1, 10]
+            ^  ^
+        4 > 2 → SWAP!
+        [1, 2, 4, 5, 1, 10]  *
+
+Step 3: Compare index 2 and 3
+        [1, 2, 4, 5, 1, 10]
+               ^  ^
+        4 < 5 → NO SWAP
+        [1, 2, 4, 5, 1, 10]  -
+
+Step 4: Compare index 3 and 4
+        [1, 2, 4, 5, 1, 10]
+                  ^  ^
+        5 > 1 → SWAP!
+        [1, 2, 4, 1, 5, 10]  *
+
+After Pass 2: [1, 2, 4, 1, 5, 10]
+                            ^^^^^^ sorted! ✅
+
+================================================================
+PASS 3: (4 bubbles to correct place)
+================================================================
+
+Start:  [1, 2, 4, 1, 5, 10]
+                     ^^^^^^ already sorted, ignored!
+
+Step 1: Compare index 0 and 1
+        [1, 2, 4, 1, 5, 10]
+         ^  ^
+        1 < 2 → NO SWAP  -
+
+Step 2: Compare index 1 and 2
+        [1, 2, 4, 1, 5, 10]
+            ^  ^
+        2 < 4 → NO SWAP  -
+
+Step 3: Compare index 2 and 3
+        [1, 2, 4, 1, 5, 10]
+               ^  ^
+        4 > 1 → SWAP!
+        [1, 2, 1, 4, 5, 10]  *
+
+After Pass 3: [1, 2, 1, 4, 5, 10]
+                         ^^^^^^^^ sorted! ✅
+
+================================================================
+PASS 4: (2 bubbles to correct place)
+================================================================
+
+Start:  [1, 2, 1, 4, 5, 10]
+                  ^^^^^^^^^ already sorted, ignored!
+
+Step 1: Compare index 0 and 1
+        [1, 2, 1, 4, 5, 10]
+         ^  ^
+        1 < 2 → NO SWAP  -
+
+Step 2: Compare index 1 and 2
+        [1, 2, 1, 4, 5, 10]
+            ^  ^
+        2 > 1 → SWAP!
+        [1, 1, 2, 4, 5, 10]  *
+
+After Pass 4: [1, 1, 2, 4, 5, 10]
+                     ^^^^^^^^^^^^ sorted! ✅
+
+================================================================
+PASS 5: (Final pass)
+================================================================
+
+Start:  [1, 1, 2, 4, 5, 10]
+                  ^^^^^^^^^^ already sorted, ignored!
+
+Step 1: Compare index 0 and 1
+        [1, 1, 2, 4, 5, 10]
+         ^  ^
+        1 == 1 → NO SWAP  -
+
+After Pass 5: [1, 1, 2, 4, 5, 10] ✅ FULLY SORTED!
+
+================================================================
+SUMMARY OF EACH PASS:
+================================================================
+
+Pass 1: [5, 1, 4, 2, 10, 1]  →  [1, 4, 2, 5, 1,  10]  (10 fixed)
+Pass 2: [1, 4, 2, 5, 1,  10] →  [1, 2, 4, 1, 5,  10]  (5  fixed)
+Pass 3: [1, 2, 4, 1, 5,  10] →  [1, 2, 1, 4, 5,  10]  (4  fixed)
+Pass 4: [1, 2, 1, 4, 5,  10] →  [1, 1, 2, 4, 5,  10]  (2  fixed)
+Pass 5: [1, 1, 2, 4, 5,  10] →  [1, 1, 2, 4, 5,  10]  (done!)
+
+================================================================
+KEY OBSERVATIONS:
+================================================================
+
+1. Each pass GUARANTEES largest unsorted element reaches its
+   correct position at the end.
+
+2. Each pass does ONE LESS comparison than previous pass
+   because last elements are already sorted.
+
+3. Total comparisons = 5+4+3+2+1 = 15 = n*(n-1)/2 = O(n²)
+
+4. Why called "Bubble" Sort?
+   Larger elements slowly "bubble up" to the right
+   like bubbles rising to the surface of water! 🫧
+
+================================================================
+                        END OF FILE
+================================================================
