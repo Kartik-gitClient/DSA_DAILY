@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0001-two-sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [1480-running-sum-of-1d-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/1480-running-sum-of-1d-array) |
 ## Two Pointers
 |  |
 | ------- |
@@ -14,4 +15,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0001-two-sum) |
+## Prefix Sum
+|  |
+| ------- |
+| [1480-running-sum-of-1d-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/1480-running-sum-of-1d-array) |
 <!---LeetCode Topics End-->
