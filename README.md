@@ -34,4 +34,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0977-squares-of-a-sorted-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0977-squares-of-a-sorted-array) |
+## Math
+|  |
+| ------- |
+| [2235-add-two-integers](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2235-add-two-integers) |
 <!---LeetCode Topics End-->
