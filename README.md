@@ -34,11 +34,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0977-squares-of-a-sorted-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0977-squares-of-a-sorted-array) |
+| [3536-maximum-product-of-two-digits](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/3536-maximum-product-of-two-digits) |
 ## Math
 |  |
 | ------- |
 | [0412-fizz-buzz](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0412-fizz-buzz) |
 | [2235-add-two-integers](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2235-add-two-integers) |
+| [3536-maximum-product-of-two-digits](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/3536-maximum-product-of-two-digits) |
 ## String
 |  |
 | ------- |
