@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0004-median-of-two-sorted-arrays) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0832-flipping-an-image](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0832-flipping-an-image) |
 | [0977-squares-of-a-sorted-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0977-squares-of-a-sorted-array) |
 | [1480-running-sum-of-1d-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/1480-running-sum-of-1d-array) |
 | [3024-type-of-triangle](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/3024-type-of-triangle) |
@@ -14,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0832-flipping-an-image](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0832-flipping-an-image) |
 | [0977-squares-of-a-sorted-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0977-squares-of-a-sorted-array) |
 ## Hash Table
 |  |
@@ -56,12 +58,18 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0412-fizz-buzz](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0412-fizz-buzz) |
+| [0832-flipping-an-image](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0832-flipping-an-image) |
 ## Bit Manipulation
 |  |
 | ------- |
+| [0832-flipping-an-image](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0832-flipping-an-image) |
 | [1486-xor-operation-in-an-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/1486-xor-operation-in-an-array) |
 ## Polygons
 |  |
 | ------- |
 | [3024-type-of-triangle](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/3024-type-of-triangle) |
+## Matrix
+|  |
+| ------- |
+| [0832-flipping-an-image](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0832-flipping-an-image) |
 <!---LeetCode Topics End-->
