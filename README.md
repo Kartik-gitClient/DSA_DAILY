@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0832-flipping-an-image](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0832-flipping-an-image) |
 | [0977-squares-of-a-sorted-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0977-squares-of-a-sorted-array) |
 | [1089-duplicate-zeros](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/1089-duplicate-zeros) |
+| [2396-strictly-palindromic-number](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2396-strictly-palindromic-number) |
 ## Hash Table
 |  |
 | ------- |
@@ -52,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/1281-subtract-the-product-and-sum-of-digits-of-an-integer) |
 | [1486-xor-operation-in-an-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/1486-xor-operation-in-an-array) |
 | [2235-add-two-integers](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2235-add-two-integers) |
+| [2396-strictly-palindromic-number](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2396-strictly-palindromic-number) |
 | [2520-count-the-digits-that-divide-a-number](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2520-count-the-digits-that-divide-a-number) |
 | [2652-sum-multiples](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2652-sum-multiples) |
 | [3024-type-of-triangle](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/3024-type-of-triangle) |
@@ -80,4 +82,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0832-flipping-an-image](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0832-flipping-an-image) |
+## Brainteaser
+|  |
+| ------- |
+| [2396-strictly-palindromic-number](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2396-strictly-palindromic-number) |
 <!---LeetCode Topics End-->
