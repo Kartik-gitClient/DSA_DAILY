@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0977-squares-of-a-sorted-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0977-squares-of-a-sorted-array) |
 | [1089-duplicate-zeros](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/1089-duplicate-zeros) |
 | [1480-running-sum-of-1d-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/1480-running-sum-of-1d-array) |
+| [2540-minimum-common-value](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2540-minimum-common-value) |
 | [3024-type-of-triangle](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/3024-type-of-triangle) |
 ## Two Pointers
 |  |
@@ -23,10 +24,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0977-squares-of-a-sorted-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0977-squares-of-a-sorted-array) |
 | [1089-duplicate-zeros](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/1089-duplicate-zeros) |
 | [2396-strictly-palindromic-number](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2396-strictly-palindromic-number) |
+| [2540-minimum-common-value](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2540-minimum-common-value) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0001-two-sum) |
+| [2540-minimum-common-value](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2540-minimum-common-value) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -36,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0004-median-of-two-sorted-arrays) |
 | [0704-binary-search](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0704-binary-search) |
+| [2540-minimum-common-value](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2540-minimum-common-value) |
 ## Divide and Conquer
 |  |
 | ------- |
