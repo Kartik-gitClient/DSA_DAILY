@@ -60,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2396-strictly-palindromic-number](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2396-strictly-palindromic-number) |
 | [2520-count-the-digits-that-divide-a-number](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2520-count-the-digits-that-divide-a-number) |
 | [2652-sum-multiples](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2652-sum-multiples) |
+| [2894-divisible-and-non-divisible-sums-difference](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2894-divisible-and-non-divisible-sums-difference) |
 | [3024-type-of-triangle](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/3024-type-of-triangle) |
 | [3536-maximum-product-of-two-digits](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/3536-maximum-product-of-two-digits) |
 ## String
