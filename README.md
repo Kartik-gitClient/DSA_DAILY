@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1089-duplicate-zeros](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/1089-duplicate-zeros) |
 | [1480-running-sum-of-1d-array](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/1480-running-sum-of-1d-array) |
 | [1550-three-consecutive-odds](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/1550-three-consecutive-odds) |
+| [2114-maximum-number-of-words-found-in-sentences](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2114-maximum-number-of-words-found-in-sentences) |
 | [2540-minimum-common-value](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2540-minimum-common-value) |
 | [3024-type-of-triangle](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/3024-type-of-triangle) |
 ## Two Pointers
@@ -71,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0344-reverse-string](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0344-reverse-string) |
 | [0412-fizz-buzz](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0412-fizz-buzz) |
 | [0709-to-lower-case](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0709-to-lower-case) |
+| [2114-maximum-number-of-words-found-in-sentences](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2114-maximum-number-of-words-found-in-sentences) |
 ## Simulation
 |  |
 | ------- |
