@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0001-two-sum) |
+| [1832-check-if-the-sentence-is-pangram](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/1832-check-if-the-sentence-is-pangram) |
 | [2540-minimum-common-value](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2540-minimum-common-value) |
 ## Prefix Sum
 |  |
@@ -72,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0344-reverse-string](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0344-reverse-string) |
 | [0412-fizz-buzz](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0412-fizz-buzz) |
 | [0709-to-lower-case](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/0709-to-lower-case) |
+| [1832-check-if-the-sentence-is-pangram](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/1832-check-if-the-sentence-is-pangram) |
 | [2114-maximum-number-of-words-found-in-sentences](https://github.com/Kartik-gitClient/DSA_DAILY/tree/master/2114-maximum-number-of-words-found-in-sentences) |
 ## Simulation
 |  |
